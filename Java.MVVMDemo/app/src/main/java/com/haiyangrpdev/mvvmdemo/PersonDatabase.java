@@ -42,9 +42,9 @@ public abstract class PersonDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            personDao.insert(new Person("Rey", "rey@gmail.com"));
-            personDao.insert(new Person("Ken", "ken@gmail.com"));
-            personDao.insert(new Person("Joseph", "joseph@gmail.com"));
+            personDao.insert(new Person("Rey", "rey@gmail.com",1));
+            personDao.insert(new Person("Ken", "ken@gmail.com",2));
+            personDao.insert(new Person("Joseph", "joseph@gmail.com",3));
             return null;
         }
     }

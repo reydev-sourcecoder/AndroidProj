@@ -21,4 +21,8 @@ public class PersonViewModel extends AndroidViewModel {
     public LiveData<List<Person>> getAllPersons() {
         return allPersons;
     }
+
+    public void addPersonToDB(Person person) {
+        personRepository.insert(person);
+    }
 }
