@@ -25,4 +25,8 @@ public class PersonViewModel extends AndroidViewModel {
     public void addPersonToDB(Person person) {
         personRepository.insert(person);
     }
+
+    public void deletePersonFromDB(Person person) {
+        personRepository.delete(person);
+    }
 }

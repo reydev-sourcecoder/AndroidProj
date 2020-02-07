@@ -38,6 +38,10 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.PersonHold
         notifyDataSetChanged();
     }
 
+    public Person getPersonAt(int position) {
+        return allPersons.get(position);
+    }
+
     class PersonHolder extends RecyclerView.ViewHolder {
 
         private TextView tvName;
